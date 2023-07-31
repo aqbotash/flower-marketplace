@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flower-marketplace-sql-deploy"
+version = "0.1.0"
+description = ""
+authors = ["Akbota <aqbotamaratqyzy@example.com>"]
+readme = "README.md"
+packages = [{include = "flower_marketplace_sql_deploy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.19"
+fastapi = "^0.100.1"
+pydantic = "^2.1.1"
+uvicorn = "^0.23.1"
+alembic = "^1.11.1"
+attrs = "^23.1.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
